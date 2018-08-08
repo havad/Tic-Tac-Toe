@@ -15,35 +15,44 @@
     <div id="board">
         
         <div id="topRow" class="row">
-            <div id="topLeft" class="square">
+            <div id="topLeft" class="square" onclick="play('topLeftImage')">
+                <img id="topLeftImage" src="blank.png">
             </div>
-            <div id="topMiddle" class="square">
+            <div id="topMiddle" class="square" onclick="play('topMiddleImage')">
+                 <img id=topMiddleImage src="blank.png">
             </div>
-            <div id="topRight" class="square">
+            <div id="topRight" class="square" onclick="play('topRightImage')">
+                <img id=topRightImage src="blank.png">
             </div>
         </div>
 
         <div id="middleRow" class="row">
-            <div id="middleLeft" class="square">
+            <div id="middleLeft" class="square" onclick="play('middleLeftImage')">
+                <img id="middleLeftImage" src="blank.png">
             </div>
-            <div id="middleMiddle" class="square">
+            <div id="middleMiddle" class="square" onclick="play('middleMiddleImage')">
+                <img id="middleMiddleImage" src="blank.png">
             </div>
-            <div id="middleRight" class="square">
+            <div id="middleRight" class="square" onclick="play('middleRightImage')">
+                <img id="middleRightImage" src="blank.png">
             </div>
         </div>
 
         <div id="bottomRow" class="row">
-            <div id="bottomLeft" class="square">
+            <div id="bottomLeft" class="square" onclick="play('bottomLeftImage')">
+                <img id="bottomLeftImage" src="blank.png">
             </div>
-            <div id="bottomMiddle" class="square">
+            <div id="bottomMiddle" class="square" onclick="play('bottomMiddleImage')">
+                <img id="bottomMiddleImage" src="blank.png">
             </div>
-            <div id="bottomRight" class="square">
+            <div id="bottomRight" class="square" onclick="play('bottomRightImage')">
+                <img id="bottomRightImage" src="blank.png">
             </div>
         </div>
 
     </div>
     <div id="button">
-        <button id="resetButton">Reset</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
     </div>
     
 </body>
