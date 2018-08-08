@@ -1,0 +1,18 @@
+#title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#button {
+    text-align: center;
+}
+
+.verticalLine {
+    width: 50px;
+    height:100px;
+    background-color: darkblue;
+}
+
+#board {
+    display:inline-block;
+}
