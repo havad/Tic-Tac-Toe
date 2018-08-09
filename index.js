@@ -8,14 +8,43 @@ function play(img) {
             console.log("player is " + player);
             document.getElementById(img).src = "x.png";
             editBoardstate(img);
+            checkWin(player);
             player = "o";
         }
         else if (player == "o") {
             console.log("player is " + player);
             document.getElementById(img).src = "o.png";
             editBoardstate(img);
+            checkWin(player);
             player = "x";
         }
+    }
+}
+
+function checkWin(letter) {
+    if(boardstate[0] == letter && boardstate[1] == letter && boardstate[2] == letter) {
+        console.log("player " + player + " wins!"); 
+    }
+    else if(boardstate[0] == letter && boardstate[4] == letter && boardstate[8] == letter) {
+        console.log("player " + player + " wins!");
+    }
+    else if(boardstate[0] == letter && boardstate[3] == letter && boardstate[6] == letter) {
+        console.log("player " + player + " wins!");
+    }
+    else if(boardstate[1] == letter && boardstate[4] == letter && boardstate[7] == letter) {
+        console.log("player " + player + " wins!");
+    }
+    else if(boardstate[2] == letter && boardstate[4] == letter && boardstate[6] == letter) {
+        console.log("player " + player + " wins!");
+    }
+    else if(boardstate[2] == letter && boardstate[5] == letter && boardstate[8] == letter) {
+        console.log("player " + player + " wins!");
+    }
+    else if(boardstate[3] == letter && boardstate[4] == letter && boardstate[5] == letter) {
+        console.log("player " + player + " wins!");
+    }
+    else if(boardstate[6] == letter && boardstate[7] == letter && boardstate[8] == letter) {
+        console.log("player " + player + " wins!");
     }
 }
 
