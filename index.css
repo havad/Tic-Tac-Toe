@@ -26,3 +26,18 @@
 body {
     background-color: gray;
 }
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+}
+
+#xWins {
+    margin:50px 50px 50px 50px;
+    float:left;
+}
+
+#oWins {
+    margin:50px 49px 50px 49px;
+    float:right;
+}

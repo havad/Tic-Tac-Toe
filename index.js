@@ -1,6 +1,8 @@
 var player = "x";
 var boardstate = ["0","0","0","0","0","0","0","0","0"];
 var playing = true;
+var xWins = 0;
+var oWins = 0;
 
 function play(img) {
     var check = checkPlayed(img);
@@ -54,6 +56,20 @@ function checkWin(letter) {
     else if(boardstate[6] == letter && boardstate[7] == letter && boardstate[8] == letter) {
         console.log("player " + player + " wins!");
         playing = false;
+    }
+    if(playing == false) {
+        incrementWins(player);
+    }
+}
+
+function incrementWins(winner) {
+    if(player == "x") {
+        xWins = xWins + 1;
+        document.getElementById("xNum").innerHTML = xWins;
+    }
+    else if(player == "o") {
+        oWins = oWins + 1;
+        document.getElementById("oNum").innerHTML = oWins;
     }
 }
 

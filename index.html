@@ -13,8 +13,13 @@
         <h1>PLAY TIC-TAC-TOE</h1> 
     </div>
     <div id="board">
-        
+
         <div id="topRow" class="row">
+
+            <div id="xWins">
+                <p>X WINS</p><br><p id="xNum">0</p>
+             </div>
+
             <div id="topLeft" class="square" onclick="play('topLeftImage')">
                 <img id="topLeftImage" src="blank.png">
             </div>
@@ -24,6 +29,11 @@
             <div id="topRight" class="square" onclick="play('topRightImage')">
                 <img id=topRightImage src="blank.png">
             </div>
+
+            <div id="oWins">
+                <p>O WINS</p><br><p id="oNum">0</p>
+            </div>
+
         </div>
 
         <div id="middleRow" class="row">
